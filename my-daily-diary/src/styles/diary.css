@@ -1,0 +1,180 @@
+.diary {
+  background-size: cover;
+  background-image: url(../images/pinkback.jpg); /* Fixed path */
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.username {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+
+ height: 100vh;
+  padding: 20px;
+  height: 50vh;
+  width: 70vw;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; /* Prevents overflow issues */
+}
+
+.diary-entry {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diary-entry h3 {
+  font-size: 20px;
+  
+  margin-left: 350px;
+}
+
+.entry-textarea {
+  width: 100%;
+  padding: 10px;
+  height: 30vh;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  /* background-image: url("../images/spim.jpg");
+  background-position: center;
+  background-size: cover; */
+  font-size: 16px;
+  color: #555;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.entry-textarea::placeholder {
+  color: #aaa;
+  
+}
+
+.dateseter {
+  display: flex;
+  justify-content: space-around; /* Space between date picker and diary entry */
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.date-picker {
+  width: 200px; /* Adjust width as needed */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.save-button {
+  display: flex;
+  width: 100px;
+  padding: 12px;
+  margin-top: 12px;
+  align-self: center; /* Center within its container */
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+  border: none;
+  justify-content: center;
+  border-radius: 8px;
+  align-self: flex-end;
+  background-color: #ff6f61; /* Cute coral color */
+  color: #fff; /* White text */
+  font-size: 18px;
+  font-weight: bold; /* Optional: makes text stand out */
+}
+
+/* Hover effect */
+.save-button:hover {
+  background-color: #e55d50; /* Slightly darker coral */
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Focus effect */
+.save-button:focus {
+  outline: none; /* Removes default outline */
+  box-shadow: 0 0 0 3px rgba(255, 111, 97, 0.5); /* Adds a custom focus ring */
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .diary {
+    height: auto;
+    padding: 10px;
+  }
+  .content{
+    height: 80vh;
+  }
+
+  .dateseter{
+    /* width: 100%; */
+    margin-bottom: 20px;
+  }
+  .diary-entry h3{
+    font-size: small;
+    margin-left: 30px;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+  }
+
+  .username {
+    font-size: 18px;
+  }
+
+  .content {
+    width: 100vw;
+    padding: 10px;
+    height: 80vh;
+  }
+
+  .save-button{
+    font-size: 13px;
+  }
+  .entry-textarea {
+  
+    font-size: 13px;
+  }
+  .dateseter{
+    /* width: 100%; */
+    margin-bottom: 20px;
+  }
+  .diary-entry h3{
+    font-size: small;
+    margin-left: 30px;
+
+  }
+ 
+}

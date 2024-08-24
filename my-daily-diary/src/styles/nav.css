@@ -1,0 +1,86 @@
+/* Navbar Styles - Default (for larger screens) */
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    margin-top: 12px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.logo-image {
+    height: 70px;
+    margin-right: 20px;
+}
+
+.login-image {
+    height: 46px;
+    margin: auto;
+}
+
+.t1 {
+    margin: 0px;
+    font-size: 35px;
+    font-family: "Mochiy Pop One", sans-serif;
+}
+
+.log {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+    text-align: center;
+    justify-content: center;
+}
+
+.logbtn {
+    background: none;
+    border: none;
+    font-family: "Mochiy Pop One", sans-serif;
+}
+
+.log Link {
+    display: flex;
+}
+
+/* Media Queries for Navbar Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+
+    .logo-image {
+        height: 50px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .t1 {
+        font-size: 28px;
+    }
+
+    .log {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .t1 {
+        font-size: 24px;
+    }
+
+    .logo-image, .login-image {
+        height: 40px;
+    }
+}
